@@ -1,0 +1,31 @@
+$text-color: #edeff2;
+
+div{
+  height: 100vh;
+  ul{
+    list-style-type: none;
+    display: block;
+    height: 100%;
+    margin: 0;
+    padding: 0;
+
+    .user{
+      align-items: center;
+      text-align: center;
+      i{
+        font-size: 50px;
+      }
+    }
+
+    li{
+      display: block;
+      line-height: 40px;
+      border-bottom: 0.03em solid #898f99;
+      a{
+        display: block;
+        text-decoration: none;
+        color: $text-color;
+      }
+    }
+  }
+}

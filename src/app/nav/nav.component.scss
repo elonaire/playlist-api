@@ -1,0 +1,19 @@
+$text-color: #edeff2;
+
+.nav{
+  padding: 0;
+  margin: 0;
+  height: 70px;
+  display: flex;
+  flex: 100%;
+  flex-direction: row-reverse;
+  color: $text-color;
+  align-items: center;
+  text-align: center;
+  a{
+    color: $text-color;
+    text-decoration: none;
+    display: block;
+    padding: 0 10px 0 10px;
+  }
+}

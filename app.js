@@ -7,16 +7,13 @@ const usersRoutes = require('./api/routes/users');
 
 const app = express();
 
-app.set('views', path.join(__dirname, 'views'));
-app.set('view engine', 'ejs');
-app.engine('html', require('ejs').renderFile);
 
 app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
-app.use(express.static(path.join(__dirname, 'dist/mean-angular6')));
-app.use('/', express.static(path.join(__dirname, 'dist/mean-angular6')));
+app.use(express.static(path.join(__dirname, 'dist/ng6')));
+app.use('/', express.static(path.join(__dirname, 'dist/ng6/index.html')));
 
 app.use('/users', usersRoutes);
 

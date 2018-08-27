@@ -1,5 +1,6 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AppComponent } from './app.component';
 import { DetailsComponent } from './details/details.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavComponent } from './nav/nav.component';
@@ -20,6 +21,10 @@ const routes: Routes = [
   {
     path: 'faq',
     component: FaqComponent
+  },
+  {
+    path: 'users/login',
+    component: AppComponent
   }
 ];
 
