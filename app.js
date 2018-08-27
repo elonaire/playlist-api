@@ -3,7 +3,6 @@ const path = require('path');
 const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
-const indexRoutes = require('./api/routes/index');
 const usersRoutes = require('./api/routes/users');
 
 const app = express();
@@ -16,8 +15,9 @@ app.use(logger('dev'));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 app.use(cookieParser());
+app.use(express.static(path.join(__dirname, 'dist/mean-angular6')));
+app.use('/', express.static(path.join(__dirname, 'dist/mean-angular6')));
 
-app.use('/', indexRoutes);
 app.use('/users', usersRoutes);
 
 // catch 404
