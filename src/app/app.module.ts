@@ -10,6 +10,10 @@ import { FaqComponent } from './faq/faq.component';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 import { StatsComponent } from './stats/stats.component';
+import { CampaignsComponent } from './campaigns/campaigns.component';
+import { ArtistDashComponent } from './artist-dash/artist-dash.component';
+import { CuratorDashComponent } from './curator-dash/curator-dash.component';
+import { SidebartwoComponent } from './sidebartwo/sidebartwo.component';
 
 @NgModule({
   declarations: [
@@ -18,7 +22,11 @@ import { StatsComponent } from './stats/stats.component';
     NavComponent,
     DetailsComponent,
     FaqComponent,
-    StatsComponent
+    StatsComponent,
+    CampaignsComponent,
+    ArtistDashComponent,
+    CuratorDashComponent,
+    SidebartwoComponent,
   ],
   imports: [
     BrowserModule,

@@ -5,26 +5,39 @@ import { DetailsComponent } from './details/details.component';
 import { SidebarComponent } from './sidebar/sidebar.component';
 import { NavComponent } from './nav/nav.component';
 import { FaqComponent } from './faq/faq.component';
+import { CuratorDashComponent } from './curator-dash/curator-dash.component';
+import { ArtistDashComponent } from './artist-dash/artist-dash.component';
+import { CampaignsComponent } from './campaigns/campaigns.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
 
 const routes: Routes = [
   {
-    path: '',
-    component: DetailsComponent
+    path: 'artist',
+    component: ArtistDashComponent,
+    children: [
+      {
+        path: 'dashboard',
+        component: DetailsComponent
+      },
+      {
+        path: 'faq',
+        component: FaqComponent
+      },
+      {
+        path: 'campaign',
+        component: CampaignsComponent
+      }
+    ]
   },
   {
-    path: 'artists/:id',
-    component: DetailsComponent
-  },
-  {
-    path: 'faq',
-    component: FaqComponent
+    path: 'curator',
+    component: CuratorDashComponent
   },
   {
     path: 'users/login',
-    component: AppComponent
+    component: DetailsComponent
   }
 ];
 

@@ -1,0 +1,20 @@
+.campaign{
+  .title{
+    display: flex;
+    flex: 100%;
+  }
+
+  .campaign-info{
+    margin: 10px 20px 10px 20px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #eee;
+    color: #292c30;
+    table{
+      width: 100%;
+      td{
+        text-align: center;
+      }
+    }
+  }
+}
