@@ -1,7 +1,9 @@
 $text-color: #edeff2;
 
 div{
-  height: 100vh;
+  display: grid;
+  grid-template-columns: 100%;
+  grid-auto-rows: minmax(100vh, 100%);
   ul{
     list-style-type: none;
     display: block;

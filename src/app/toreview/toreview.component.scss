@@ -1,0 +1,32 @@
+$pale-dark: #232a35;
+$text-color: #edeff2;
+
+.review{
+  background-color: $pale-dark;
+  padding: 20px;
+  display: grid;
+  grid-template-columns: 100%;
+  height: 75vh;
+  margin: 50px;
+  border-radius: 5px;
+
+  .tabs{
+    display: flex;
+    flex-direction: row;
+    flex: 100%;
+    border-bottom: 0.1em solid #edeff2;
+    padding: 0 0 0 0;
+
+    a{
+      margin-right: 20px;
+      color: $text-color;
+      text-decoration: none;
+    }
+  }
+
+  .review-content{
+    height: 65vh;
+    overflow-y: scroll;
+    margin: 20px 0 0 0;
+  }
+}

@@ -14,6 +14,12 @@ import { CampaignsComponent } from './campaigns/campaigns.component';
 import { ArtistDashComponent } from './artist-dash/artist-dash.component';
 import { CuratorDashComponent } from './curator-dash/curator-dash.component';
 import { SidebartwoComponent } from './sidebartwo/sidebartwo.component';
+import { LoginComponent } from './login/login.component';
+import { ToreviewComponent } from './toreview/toreview.component';
+import { ArtistAuthComponent } from './artist-auth/artist-auth.component';
+import { LabelAuthComponent } from './label-auth/label-auth.component';
+import { AdminAuthComponent } from './admin-auth/admin-auth.component';
+import { CuratorAuthComponent } from './curator-auth/curator-auth.component';
 
 @NgModule({
   declarations: [
@@ -27,6 +33,12 @@ import { SidebartwoComponent } from './sidebartwo/sidebartwo.component';
     ArtistDashComponent,
     CuratorDashComponent,
     SidebartwoComponent,
+    LoginComponent,
+    ToreviewComponent,
+    ArtistAuthComponent,
+    LabelAuthComponent,
+    AdminAuthComponent,
+    CuratorAuthComponent,
   ],
   imports: [
     BrowserModule,
