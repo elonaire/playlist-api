@@ -20,6 +20,13 @@ import { ArtistAuthComponent } from './artist-auth/artist-auth.component';
 import { LabelAuthComponent } from './label-auth/label-auth.component';
 import { AdminAuthComponent } from './admin-auth/admin-auth.component';
 import { CuratorAuthComponent } from './curator-auth/curator-auth.component';
+import { CuratorDetailsComponent } from './curator-details/curator-details.component';
+import { AwaitingComponent } from './awaiting/awaiting.component';
+import { ReviewedComponent } from './reviewed/reviewed.component';
+import { MissedComponent } from './missed/missed.component';
+import { PlaylistsComponent } from './playlists/playlists.component';
+import { ReviewComponent } from './review/review.component';
+import { PlaylistComponent } from './playlist/playlist.component';
 
 @NgModule({
   declarations: [
@@ -39,6 +46,13 @@ import { CuratorAuthComponent } from './curator-auth/curator-auth.component';
     LabelAuthComponent,
     AdminAuthComponent,
     CuratorAuthComponent,
+    CuratorDetailsComponent,
+    AwaitingComponent,
+    ReviewedComponent,
+    MissedComponent,
+    PlaylistsComponent,
+    ReviewComponent,
+    PlaylistComponent,
   ],
   imports: [
     BrowserModule,

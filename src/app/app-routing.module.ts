@@ -14,6 +14,11 @@ import { AdminAuthComponent } from './admin-auth/admin-auth.component';
 import { ArtistAuthComponent } from './artist-auth/artist-auth.component';
 import { CuratorAuthComponent } from './curator-auth/curator-auth.component';
 import { LabelAuthComponent } from './label-auth/label-auth.component';
+import { CuratorDetailsComponent } from './curator-details/curator-details.component';
+import { AwaitingComponent } from './awaiting/awaiting.component';
+import { MissedComponent } from './missed/missed.component';
+import { PlaylistsComponent } from './playlists/playlists.component';
+import { ReviewedComponent } from './reviewed/reviewed.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -65,7 +70,7 @@ const routes: Routes = [
     children: [
       {
         path: 'dashboard',
-        component: DetailsComponent
+        component: CuratorDetailsComponent
       },
       {
         path: 'faq',
@@ -73,7 +78,25 @@ const routes: Routes = [
       },
       {
         path: 'toreview',
-        component: ToreviewComponent
+        component: ToreviewComponent,
+        children: [
+          {
+            path: 'awaiting',
+            component: AwaitingComponent
+          },
+          {
+            path: 'reviewed',
+            component: ReviewedComponent
+          },
+          {
+            path: 'missed',
+            component: MissedComponent
+          }
+        ]
+      },
+      {
+        path: 'playlists',
+        component: PlaylistsComponent
       }
     ]
   },

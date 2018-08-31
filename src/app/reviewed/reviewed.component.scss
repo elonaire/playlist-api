@@ -1,0 +1,12 @@
+.reviewed{
+  table{
+    width: 100%;
+    td:first-child{
+      color: green;
+    }
+    td{
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

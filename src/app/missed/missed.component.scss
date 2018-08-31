@@ -1,0 +1,12 @@
+.missed{
+  table{
+    width: 100%;
+    td:first-child{
+      color: red;
+    }
+    td{
+      align-items: center;
+      text-align: center;
+    }
+  }
+}

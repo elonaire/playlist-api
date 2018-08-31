@@ -1,4 +1,6 @@
 import { Component, OnInit } from '@angular/core';
+import { DataService } from '../data.service';
+import { Router } from '@angular/router';
 
 @Component({
   selector: 'app-curator-dash',
@@ -6,10 +8,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./curator-dash.component.scss']
 })
 export class CuratorDashComponent implements OnInit {
+  private details: Object;
 
-  constructor() { }
+  constructor(private router: Router) { }
 
   ngOnInit() {
+    this.router.navigateByUrl('/curator/dashboard');
+  }
+
+  logOut() {
+    this.router.navigateByUrl('/');
   }
 
 }

@@ -1,0 +1,15 @@
+.awaiting{
+  table{
+    width: 100%;
+    td:first-child{
+      color: orange;
+    }
+    td{
+      align-items: center;
+      text-align: center;
+      a{
+        color: inherit;
+      }
+    }
+  }
+}

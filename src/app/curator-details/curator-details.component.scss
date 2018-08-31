@@ -1,0 +1,53 @@
+$text-color: #edeff2;
+$faded-purple: #CE6DDF;
+$cyan: #12E3FF;
+$faded-pink: #F279A1;
+
+.dash{
+  .title{
+    display: flex;
+    flex: 100%;
+  }
+
+  .stats{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 2em;
+    padding: 15px 10px 15px 15px;
+
+    div{
+      padding: 10px;
+      border-radius: 5px;
+    }
+
+    p{
+      font-size: 20px;
+    }
+
+    .followers{
+      background-color: $cyan;
+    }
+
+    .playlists{
+      background-color: $faded-pink;
+    }
+
+    .reviews{
+      background-color: $faded-purple;
+    }
+  }
+
+  .recent{
+    margin: 10px 20px 10px 20px;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: #eee;
+    color: #292c30;
+    table{
+      width: 100%;
+      td{
+        text-align: center;
+      }
+    }
+  }
+}
