@@ -20,6 +20,10 @@ import { MissedComponent } from './missed/missed.component';
 import { PlaylistsComponent } from './playlists/playlists.component';
 import { ReviewedComponent } from './reviewed/reviewed.component';
 import { HomeComponent } from './home/home.component';
+import { ResultsComponent } from './results/results.component';
+import { ReferralsComponent } from './referrals/referrals.component';
+import { HistoryComponent } from './history/history.component';
+import { BalanceComponent } from './balance/balance.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -68,6 +72,18 @@ const routes: Routes = [
       {
         path: 'campaign',
         component: CampaignsComponent
+      },
+      {
+        path: 'balance',
+        component: BalanceComponent
+      },
+      {
+        path: 'referrals',
+        component: ReferralsComponent
+      },
+      {
+        path: 'results',
+        component: ResultsComponent
       }
     ]
   },
@@ -104,6 +120,14 @@ const routes: Routes = [
       {
         path: 'playlists',
         component: PlaylistsComponent
+      },
+      {
+        path: 'history',
+        component: HistoryComponent
+      },
+      {
+        path:'balance',
+        component: BalanceComponent
       }
     ]
   },

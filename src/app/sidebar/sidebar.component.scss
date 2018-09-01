@@ -1,4 +1,6 @@
 $text-color: #edeff2;
+$purp: #6271C8;
+$deep-blue: #3F51B5;
 
 div{
   display: grid;
@@ -20,15 +22,26 @@ div{
       }
     }
 
+    .user:hover{
+      background-color: $deep-blue;
+    }
+
     li{
       display: block;
-      line-height: 40px;
+      line-height: 60px;
       border-bottom: 0.03em solid #898f99;
+      i{
+        float: right;
+        align-self: center;
+      }
       a{
         display: block;
         text-decoration: none;
         color: $text-color;
       }
+    }
+    li:hover{
+      background-color: $purp;
     }
   }
 }

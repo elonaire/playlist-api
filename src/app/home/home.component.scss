@@ -3,6 +3,7 @@ $faded-purple: #CE6DDF;
 $cyan: #12E3FF;
 $faded-pink: #F279A1;
 $pale-dark: #232a35;
+$green: #23AD01;
 
 .wrapper{
   position: absolute;
@@ -25,6 +26,11 @@ $pale-dark: #232a35;
           font-size: 30px;
           font-style: italic;
           padding: 0 20px 3px 0;
+          border-bottom: 10px solid $pale-dark;
+          margin: 0 10% 0 0;
+        }
+        a:hover{
+          color: $green;
         }
       }
     }
@@ -40,5 +46,9 @@ $pale-dark: #232a35;
     margin: 7% 0 0 25%;
     padding: 0 20px 10px 20px;
     border-radius: 5px;
+  }
+
+  .active{
+    border-bottom: 10px solid $green;
   }
 }

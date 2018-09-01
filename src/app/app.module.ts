@@ -28,6 +28,10 @@ import { PlaylistsComponent } from './playlists/playlists.component';
 import { ReviewComponent } from './review/review.component';
 import { PlaylistComponent } from './playlist/playlist.component';
 import { HomeComponent } from './home/home.component';
+import { ReferralsComponent } from './referrals/referrals.component';
+import { ResultsComponent } from './results/results.component';
+import { BalanceComponent } from './balance/balance.component';
+import { HistoryComponent } from './history/history.component';
 
 @NgModule({
   declarations: [
@@ -55,6 +59,10 @@ import { HomeComponent } from './home/home.component';
     ReviewComponent,
     PlaylistComponent,
     HomeComponent,
+    ReferralsComponent,
+    ResultsComponent,
+    BalanceComponent,
+    HistoryComponent,
   ],
   imports: [
     BrowserModule,
