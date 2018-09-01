@@ -2,6 +2,8 @@ $text-color: #edeff2;
 $faded-purple: #CE6DDF;
 $cyan: #12E3FF;
 $faded-pink: #F279A1;
+$pale-dark: #292c30;
+$white: #eee;
 
 .dash{
   .title{
@@ -41,13 +43,18 @@ $faded-pink: #F279A1;
     margin: 10px 20px 10px 20px;
     border-radius: 5px;
     padding: 5px;
-    background-color: #eee;
-    color: #292c30;
+    background-color: $white;
+    color: $pale-dark;
     table{
       width: 100%;
       td{
         text-align: center;
       }
     }
+  }
+
+  .graphs{
+    margin: 10px 20px 10px 20px;
+    border-radius: 5px;
   }
 }

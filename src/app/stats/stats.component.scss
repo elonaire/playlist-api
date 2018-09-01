@@ -1,0 +1,25 @@
+$text-color: #edeff2;
+$faded-purple: #CE6DDF;
+$cyan: #12E3FF;
+$faded-pink: #F279A1;
+$pale-dark: #292c30;
+$white: #eee;
+
+.stats{
+  display: grid;
+  grid-template-columns: 60% 40%;
+  grid-gap: 0.2em;
+
+  div{
+    border-radius: 5px;
+    color: $pale-dark;
+    padding: 10px;
+  }
+
+  .statistics{
+    background-color: $white;
+  }
+  .campaign-results{
+    background-color: $white;
+  }
+}
