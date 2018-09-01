@@ -1,16 +1,14 @@
- <div class="auth">
-   <div class="title">
-      <h1>Access Songplay as:</h1>
-   </div>
+<div class="title">
+   <h1>Access Songplay as:</h1>
+</div>
 
-    <div class="options">
-      <a routerLink='/artistauth'>Artist</a>
-      <a routerLink='/labelauth'>Label/Agencies</a>
-      <a routerLink='/curatorauth'>Curator</a>
-      <a routerLink='/adminauth'>Admin</a>
-    </div>
+ <div class="options">
+   <a routerLink='/home/artistauth'>Artist</a>
+   <a routerLink='/home/labelauth'>Label/Agencies</a>
+   <a routerLink='/home/curatorauth'>Curator</a>
+   <a routerLink='/home/adminauth'>Admin</a>
+ </div>
 
-    <div class="fields">
-      <router-outlet></router-outlet>
-    </div>
+ <div class="fields">
+   <router-outlet></router-outlet>
  </div>

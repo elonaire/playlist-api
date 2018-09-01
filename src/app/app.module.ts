@@ -27,6 +27,7 @@ import { MissedComponent } from './missed/missed.component';
 import { PlaylistsComponent } from './playlists/playlists.component';
 import { ReviewComponent } from './review/review.component';
 import { PlaylistComponent } from './playlist/playlist.component';
+import { HomeComponent } from './home/home.component';
 
 @NgModule({
   declarations: [
@@ -53,6 +54,7 @@ import { PlaylistComponent } from './playlist/playlist.component';
     PlaylistsComponent,
     ReviewComponent,
     PlaylistComponent,
+    HomeComponent,
   ],
   imports: [
     BrowserModule,

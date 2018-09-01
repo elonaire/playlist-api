@@ -19,6 +19,7 @@ import { AwaitingComponent } from './awaiting/awaiting.component';
 import { MissedComponent } from './missed/missed.component';
 import { PlaylistsComponent } from './playlists/playlists.component';
 import { ReviewedComponent } from './reviewed/reviewed.component';
+import { HomeComponent } from './home/home.component';
 import { BrowserModule } from '@angular/platform-browser';
 import { FormsModule } from '@angular/forms';
 import { HttpClientModule } from '@angular/common/http';
@@ -26,23 +27,29 @@ import { HttpClientModule } from '@angular/common/http';
 const routes: Routes = [
   {
     path: '',
-    component: LoginComponent,
+    component: HomeComponent,
     children: [
       {
-        path: 'artistauth',
-        component: ArtistAuthComponent
-      },
-      {
-        path: 'curatorauth',
-        component: CuratorAuthComponent
-      },
-      {
-        path: 'adminauth',
-        component: AdminAuthComponent
-      },
-      {
-        path: 'labelauth',
-        component: LabelAuthComponent
+        path: 'home',
+        component: LoginComponent,
+        children: [
+          {
+            path: 'artistauth',
+            component: ArtistAuthComponent
+          },
+          {
+            path: 'curatorauth',
+            component: CuratorAuthComponent
+          },
+          {
+            path: 'adminauth',
+            component: AdminAuthComponent
+          },
+          {
+            path: 'labelauth',
+            component: LabelAuthComponent
+          }
+        ]
       }
     ]
   },
