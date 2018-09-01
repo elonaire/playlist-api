@@ -31,7 +31,9 @@ $pale-dark: #232a35;
   }
 
   .auth{
-    background-color: $pale-dark;
+    background-image: url('../../images/b6b2f2864fd1f2258d.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
     display: grid;
     grid-template-columns: repeat(1,1fr);
     width: 50%;
