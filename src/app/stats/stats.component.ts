@@ -48,17 +48,17 @@ export class StatsComponent implements OnInit {
           {
             label: 'Playlist',
             data: this.playlist,
-            backgroundColor: '#ff6384';
+            backgroundColor: '#ff6384'
           },
           {
             label: 'Followers',
             data: this.followers,
-            backgroundColor: '#cc65fe';
+            backgroundColor: '#cc65fe'
           },
           {
             label: 'Popularity',
             data: this.popularity,
-            backgroundColor: '#ffce56';
+            backgroundColor: '#ffce56'
           }
         ]
       },
