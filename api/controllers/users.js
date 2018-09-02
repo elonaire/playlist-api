@@ -1,9 +1,9 @@
 const querystring = require('querystring');
 
-const my_client_id = 'b2b154c0e8ef454aa068bf4e1d498e7f';
+const my_client_id = '1a253d643ca64c1a893ab7af79c596e1';
 const redirect_uri = 'https://app.songplay.fr/spotify/callback/';
 const scope = 'user-read-private user-read-email';
-const client_secret = '4299d20d4bb648cf9ab84b6af241fbe0';
+const client_secret = '009e2267745242c38f410094e5899a63';
 
 let generateRandomString = function(length) {
   var text = '';

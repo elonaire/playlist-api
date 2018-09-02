@@ -9,7 +9,7 @@ import { Router, ActivatedRoute } from '@angular/router';
   styleUrls: ['./artist-dash.component.scss']
 })
 export class ArtistDashComponent implements OnInit {
-  private details: Object;
+  details: Object;
 
   constructor(private router: Router) { }
 

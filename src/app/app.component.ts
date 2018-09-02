@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import { DataService } from './data.service';
+import { AuthService } from './auth.service';
 import { Observable } from 'rxjs';
 
 @Component({
@@ -9,13 +9,10 @@ import { Observable } from 'rxjs';
 })
 export class AppComponent implements OnInit {
   title = 'app';
-  logins: Object;
 
-  constructor(private data: DataService){}
+  constructor(private data: AuthService){}
 
   ngOnInit(){
-    this.data.getLogin().subscribe(
-      data => this.logins = data
-    )
+    this.data.getLogin();
   }
 }

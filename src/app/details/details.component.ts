@@ -12,8 +12,8 @@ export class DetailsComponent implements OnInit {
 
   constructor(private route: ActivatedRoute, private data: DataService) { }
 
-  getArtistDetails(id){
-    this.data.getArtist(id)
+  getArtistDetails(){
+    this.data.getArtist()
     .subscribe(res=>{
       console.log(res);
       this.details = res;
@@ -21,7 +21,7 @@ export class DetailsComponent implements OnInit {
   }
 
   ngOnInit() {
-    this.getArtistDetails(this.route.snapshot.params['id']);
+    this.getArtistDetails();
   }
 
 }

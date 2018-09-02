@@ -8,7 +8,6 @@ const httpOptions = {
 };
 
 const apiUrl = "https://api.spotify.com/v1";
-const apiTwoUrl = "/users";
 
 @Injectable({
   providedIn: 'root'
@@ -17,17 +16,8 @@ export class DataService {
 
   constructor(private http: HttpClient) { }
 
-  private extractData(res: Response){
-    let body = res;
-    return body || {};
-  }
-
-  getArtist(id: string){
-    let url = `${apiUrl}/artists/${id}`;
+  getArtist(){
+    let url = `${apiUrl}/artists/7Ijwdl32LSddH695Qn3q5o`;
     return this.http.get(url);
-  }
-
-  getLogin(){
-    return this.http.get(`${apiTwoUrl}/login`);
   }
 }
